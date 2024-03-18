@@ -6,7 +6,7 @@ import { Table } from "./Table";
 
 export const Routing=()=>{
     return(
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Routes>
                 <Route path="/" element={<Forme/>}></Route>
                 <Route path="/table" element={<Table/>}></Route>
